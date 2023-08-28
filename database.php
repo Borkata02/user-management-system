@@ -11,15 +11,11 @@ class Database {
         $this->username = $username;
         $this->password = $password;
         $this->dbname = $dbname;
-    
-        echo "Attempting to connect to the database...<br>";
 
         $this->conn = new mysqli($this->host, $this->username, $this->password, $this->dbname);
         if ($this->conn->connect_error) {
             die("Connection failed: " . $this->conn->connect_error);
         }
-
-        echo "Connected to the database.<br>";
     
         $this->createDatabaseAndTable();
     }

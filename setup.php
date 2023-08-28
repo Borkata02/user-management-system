@@ -1,12 +1,10 @@
 <?php
-include_once 'database.php'; // Include the Database class
+include_once 'database.php';
 
-// Create an instance of the Database class
 $db = new Database('localhost', 'root', '', 'usermanagement');
 
 $db->createDatabaseAndTable();
 
-// The constructor of the Database class will create the database and table if necessary
 ?>
 <!DOCTYPE html>
 <html lang="en">
