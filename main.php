@@ -13,7 +13,10 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
         <label for="role">Role:</label>
-        <input type="text" id="role" name="role" required><br>
+        <select id="role" name="role" required>
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+        </select><br>
         <input type="submit" value="Register">
     </form>
 </body>
